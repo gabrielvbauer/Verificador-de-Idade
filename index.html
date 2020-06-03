@@ -22,11 +22,23 @@
 
     <section>
         <div class="box" id="box">
-            <div id="msg"></div>
-
-            <div id="foto">
-
+            <div id="msg">
+                <p>Ano de nascimento:
+                    <input type="number" min="0" max="2100">
+                </p>
+                <p>Sexo:
+                    <input type="radio" name="radsex" id="mas" checked>
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+                </p>
+                <input type="button" value="Verificar">
             </div>
+
+            <div class="res">
+                Preencha os dados para ver o resutado
+            </div>
+
         </div>
     </section>
 
