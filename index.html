@@ -14,7 +14,7 @@
     <title>Verificador de Idade</title>
 </head>
 
-<body onload="carregar()">
+<body>
 
     <header>
         <h1>Verificador de Idade</h1>
@@ -24,7 +24,7 @@
         <div class="box" id="box">
             <div id="msg">
                 <p>Ano de nascimento:
-                    <input type="number" min="0" max="2100">
+                    <input type="number" id="ano" min="0" max="2100">
                 </p>
                 <p>Sexo:
                     <input type="radio" name="radsex" id="mas" checked>
@@ -32,10 +32,10 @@
                     <input type="radio" name="radsex" id="fem">
                     <label for="fem">Feminino</label>
                 </p>
-                <input type="button" value="Verificar">
+                <input type="submit" value="Verificar" id="botao" onclick="carregar()">
             </div>
 
-            <div class="res">
+            <div class="res" id="res">
                 Preencha os dados para ver o resutado
             </div>
 
